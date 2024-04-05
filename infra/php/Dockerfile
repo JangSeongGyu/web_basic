@@ -1,5 +1,5 @@
 FROM php:8.1-fpm-buster
-EXPOSE 5175
+EXPOSE 5172
 SHELL ["/bin/bash", "-oeux", "pipefail", "-c"]
 
 ENV COMPOSER_ALLOW_SUPERUSER=1 \
