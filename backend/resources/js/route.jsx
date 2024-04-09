@@ -1,9 +1,9 @@
 import React from 'react';
-import Home from './Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import LifeCycle from './practice/Hooks/Hooks';
+import Home from './Home';
 import Header from './Header';
 import PracticeMain from './practice/PracticeMain';
+
 const Router = () => {
     return (
         <BrowserRouter>

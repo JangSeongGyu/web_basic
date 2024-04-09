@@ -15,13 +15,17 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+pre {
     margin: 0px;
+    font-family: Meiryo;
 }
 
 pre {
     background-color: rgb(30, 30, 30);
-    color: rgb(220, 220, 200);
+    color: rgb(255, 255, 255);
+    padding-left: 8px;
+    margin-bottom: 8px;
 }
 pre > * {
     color: white;
