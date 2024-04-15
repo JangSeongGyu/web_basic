@@ -2,11 +2,12 @@
     padding: 8px;
 }
 blockquote {
-    background-color: rgb(230, 230, 230);
-    padding: 8px;
+    background-color: rgb(218, 218, 218);
+    padding: 12px;
     margin: 0px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-radius: 10px;
 }
 
 h1,
@@ -24,8 +25,9 @@ pre {
 pre {
     background-color: rgb(30, 30, 30);
     color: rgb(255, 255, 255);
-    padding-left: 8px;
+    padding: 12px;
     margin-bottom: 8px;
+    border-radius: 10px;
 }
 pre > * {
     color: white;

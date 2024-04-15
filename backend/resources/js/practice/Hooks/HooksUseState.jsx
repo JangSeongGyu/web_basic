@@ -122,11 +122,11 @@ const HooksUseState = () => {
                 <p>
                     3回実行しても画面がレンダリングされないとtrapDataは同じデータを見ている。
                     <pre>
-                        setTrapData(0+1)
-                        <br />
-                        setTrapData(0+1)
-                        <br />
-                        setTrapData(0+1)
+                        {`
+    setTrapData(0+1)
+    setTrapData(0+1)
+    setTrapData(0+1)
+                        `}
                     </pre>
                     結果、一番最後に実行したものだけが残る。
                 </p>

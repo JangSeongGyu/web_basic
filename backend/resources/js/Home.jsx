@@ -7,6 +7,7 @@ function Home() {
         { id: 3, title: '3.Props' },
         { id: 4, title: '4.Events' },
         { id: 5, title: '5.Hooks' },
+        { id: 6, title: '6.Router' },
     ];
 
     const navigate = useNavigate();
@@ -16,6 +17,7 @@ function Home() {
             {navigationData.map(({ id, title }) => {
                 return (
                     <button
+                        key={id}
                         onClick={() => {
                             navigate(`/practice/${id}`);
                         }}

@@ -1,5 +1,11 @@
 import { useEffect, useState } from 'react';
 
+const firstCode = `
+    useEffect(() => {
+        // 実行コード
+    }, [/* 依存配列 */]);
+    `;
+
 const noneDependenciesCode = `
     useEffect(() => {
         console.log('dependenciesがないUseEffect');
@@ -55,20 +61,28 @@ const HooksUseEffect = () => {
         <div>
             <blockquote>
                 <h1>useEffect</h1>
-
                 <p>LifeCycleのMount、Updateが終わった後、実行するHook。</p>
+                <p>主に初期設定、特定変数チェックなどに使われる。</p>
+                <h2>書き方</h2>
                 <p>
-                    dependenciesに「State、Props」などの変数を入れて特定の変数が更新された時、実行可能。
+                    依存配列（dependencies）に「State、Props」などの変数を入れて特定の変数が更新されたら、実行するHook
                 </p>
 
-                <h2>配列（dependencies）がないUseEffect</h2>
-                <p>全てのレンダリングに実行される。</p>
+                <pre>{firstCode}</pre>
+
+                <br />
+                <h2>依存配列（dependencies）がないUseEffect</h2>
+                <p>全てのMount、Updateに実行される。</p>
                 <pre>{noneDependenciesCode}</pre>
 
-                <h2>配列（dependencies）に変数がないUseEffect</h2>
+                <br />
+                <h2>依存配列（dependencies）に変数がないUseEffect</h2>
+                <p>Mountのみ実行される。</p>
                 <pre>{noneStateCode}</pre>
 
-                <h2>配列（dependencies）にStateが入っているUseEffect</h2>
+                <br />
+                <h2>依存配列（dependencies）にStateが入っているUseEffect</h2>
+                <p>配列に入っている「State,Props」が変わる時、実行される。</p>
                 <pre>{stateCode}</pre>
                 <button
                     onClick={() => {

@@ -6,6 +6,7 @@ import PropsMain from './Props/PropsMain';
 import Render from './Render/Render';
 import Hooks from './Hooks/Hooks';
 import Events from './Events/Events';
+import ReactRouter from './ReactRouter/ReactRouter';
 
 const PracticeMain = () => {
     const { number } = useParams();
@@ -21,6 +22,8 @@ const PracticeMain = () => {
                 return <Events />;
             case '5':
                 return <Hooks />;
+            case '6':
+                return <ReactRouter />;
             default:
                 return <div>Error 404</div>;
         }

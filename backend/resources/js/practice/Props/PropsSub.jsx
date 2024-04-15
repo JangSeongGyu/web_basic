@@ -1,4 +1,5 @@
 const PropsSub = (props) => {
+    props.execute();
     return (
         <div>
             <p>SUB BOX CONTENT</p>
